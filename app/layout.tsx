@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   // TODO: Replace with your business name and description
   title: "Atelier & Co. — Interior Design",
   description:
-    "Thoughtful interior design for spaces that feel lived-in, layered, and true to you.",
+    "Creating a home is a creative pursuit. Thoughtful interior design for spaces that reflect who you are.",
 };
 
 export default function RootLayout({

@@ -97,19 +97,24 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                 Get in Touch
               </h3>
               <div className="space-y-1 text-foreground/80">
-                {/* TODO: Replace with your phone number */}
                 <p>
                   <span className="text-foreground/50">Phone:</span>{" "}
-                  (555) 123-4567
+                  208-922-8104
                 </p>
-                {/* TODO: Replace with your email address */}
                 <p>
                   <span className="text-foreground/50">Email:</span>{" "}
                   <a
-                    href="mailto:hello@atelierandco.com"
+                    href="mailto:florakayferg@gmail.com"
                     className="underline decoration-border underline-offset-4 transition-colors duration-500 hover:decoration-accent"
                   >
-                    hello@atelierandco.com
+                    florakayferg@gmail.com
+                  </a>
+                  {", "}
+                  <a
+                    href="mailto:breck8.h@gmail.com"
+                    className="underline decoration-border underline-offset-4 transition-colors duration-500 hover:decoration-accent"
+                  >
+                    breck8.h@gmail.com
                   </a>
                 </p>
               </div>

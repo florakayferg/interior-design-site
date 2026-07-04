@@ -64,14 +64,15 @@ export default function Hero({ onContactClick, onScheduleClick }: HeroProps) {
         <div className="mt-16 border-t border-border pt-12 pb-20 md:mt-20 md:pt-16 md:pb-28">
           <div className="mx-auto max-w-3xl text-center">
             <p className="mb-4 text-sm tracking-[0.25em] text-foreground/50 uppercase">
-              Spaces with soul
+              Home is a creative pursuit
             </p>
             <h1 className="font-serif text-4xl leading-tight text-foreground md:text-5xl lg:text-6xl">
               Interiors crafted with intention
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-foreground/70 md:text-lg">
-              We design rooms that honor the architecture of your home and the
-              rhythm of how you live — layered, warm, and quietly enduring.
+              We believe creating a home is a creative act — shaping rooms that
+              reflect who you are, how you gather, and the life you are building
+              within your walls.
             </p>
 
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row sm:gap-6">
