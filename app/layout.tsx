@@ -15,8 +15,7 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  // TODO: Replace with your business name and description
-  title: "Atelier & Co. — Interior Design",
+  title: "Dollhouse & Co. — Interior Design",
   description:
     "Creating a home is a creative pursuit. Thoughtful interior design for spaces that reflect who you are.",
 };
