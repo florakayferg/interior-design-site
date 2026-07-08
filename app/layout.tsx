@@ -15,9 +15,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "Dollhouse & Co. — Interior Design",
+  title: "Dollhouse & Co. | Interior Design in Provo, Utah",
   description:
-    "Creating a home is a creative pursuit. Thoughtful interior design for spaces that reflect who you are.",
+    "Dollhouse & Co. is a Provo, Utah interior design studio offering thoughtful, personalized design consultations for homes and new builds. Home is a creative pursuit — schedule your consultation today.",
 };
 
 export default function RootLayout({
