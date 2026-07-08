@@ -138,7 +138,6 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                   onSubmit={handleSubmit}
                   className="space-y-6"
                 >
-                  {/* TODO: Replace SCHEDULE_FORMSPREE_ACTION in app/lib/config.ts */}
                   <div>
                     <label
                       htmlFor="schedule-comments"
@@ -223,7 +222,6 @@ export default function ScheduleModal({ isOpen, onClose }: ScheduleModalProps) {
                 <h3 className="mb-4 text-sm tracking-[0.2em] text-foreground/50 uppercase">
                   Select a Time
                 </h3>
-                {/* TODO: Replace CALENDLY_URL in app/lib/config.ts with your real scheduling link */}
                 <div
                   ref={calendlyRef}
                   className="border border-border bg-background"

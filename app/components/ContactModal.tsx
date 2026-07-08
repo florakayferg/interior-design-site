@@ -146,7 +146,6 @@ export default function ContactModal({ isOpen, onClose }: ContactModalProps) {
                   onSubmit={handleSubmit}
                   className="space-y-5"
                 >
-                  {/* TODO: Replace CONTACT_FORMSPREE_ACTION in app/lib/config.ts */}
                   <div>
                     <label
                       htmlFor="contact-name"
