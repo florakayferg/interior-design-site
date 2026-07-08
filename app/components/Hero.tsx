@@ -1,38 +1,23 @@
 import Image from "next/image";
 
-// TODO: Replace with your own project photography
-const PROJECT_IMAGES = [
-  {
-    src: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=1200&q=80",
-    alt: "Project 1",
-    className: "col-span-2 row-span-2",
+const COLLAGE_IMAGES = {
+  porch: {
+    src: "/images/porch-photo.jpg",
+    alt: "Two women laughing on a white porch",
   },
-  {
-    src: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80",
-    alt: "Project 2",
-    className: "col-span-1 row-span-1",
+  framing: {
+    src: "/images/framing-photo.jpg",
+    alt: "Construction framing walkthrough",
   },
-  {
-    src: "https://images.unsplash.com/photo-1600210492486-724fe3c67d46?w=800&q=80",
-    alt: "Project 3",
-    className: "col-span-1 row-span-1",
+  bed: {
+    src: "/images/bed-detail.jpg",
+    alt: "Quilted bedding detail",
   },
-  {
-    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80",
-    alt: "Project 4",
-    className: "col-span-1 row-span-1",
+  floor: {
+    src: "/images/floor-detail.jpg",
+    alt: "Sunlit wood floor detail",
   },
-  {
-    src: "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80",
-    alt: "Project 5",
-    className: "col-span-1 row-span-1",
-  },
-  {
-    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-    alt: "Project 6",
-    className: "col-span-2 row-span-1",
-  },
-];
+};
 
 type HeroProps = {
   onContactClick: () => void;
@@ -43,22 +28,47 @@ export default function Hero({ onContactClick, onScheduleClick }: HeroProps) {
   return (
     <section className="min-h-screen pt-24">
       <div className="mx-auto max-w-7xl px-6 md:px-12 lg:px-16">
-        <div className="grid auto-rows-[minmax(180px,1fr)] grid-cols-2 gap-3 md:grid-cols-4 md:gap-4 lg:gap-5">
-          {PROJECT_IMAGES.map((image) => (
-            <div
-              key={image.alt}
-              className={`group relative min-h-[200px] overflow-hidden md:min-h-[240px] ${image.className}`}
-            >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                fill
-                sizes="(max-width: 768px) 50vw, 25vw"
-                className="object-cover transition-opacity duration-700 ease-out group-hover:opacity-90"
-                priority={image.alt === "Project 1"}
-              />
-            </div>
-          ))}
+        <div className="grid min-h-[520px] grid-cols-1 gap-3 sm:grid-cols-3 sm:grid-rows-2 md:min-h-[600px] md:gap-4 lg:min-h-[680px] lg:gap-5">
+          <div className="group relative min-h-[240px] overflow-hidden sm:col-span-1 sm:row-span-2 sm:min-h-0">
+            <Image
+              src={COLLAGE_IMAGES.porch.src}
+              alt={COLLAGE_IMAGES.porch.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, 33vw"
+              className="object-cover transition-opacity duration-700 ease-out group-hover:opacity-90"
+              priority
+            />
+          </div>
+
+          <div className="group relative min-h-[240px] overflow-hidden sm:col-span-1 sm:row-span-2 sm:min-h-0">
+            <Image
+              src={COLLAGE_IMAGES.framing.src}
+              alt={COLLAGE_IMAGES.framing.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, 33vw"
+              className="object-cover transition-opacity duration-700 ease-out group-hover:opacity-90"
+            />
+          </div>
+
+          <div className="group relative min-h-[200px] overflow-hidden sm:col-span-1 sm:row-span-1 sm:min-h-0">
+            <Image
+              src={COLLAGE_IMAGES.bed.src}
+              alt={COLLAGE_IMAGES.bed.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, 33vw"
+              className="object-cover transition-opacity duration-700 ease-out group-hover:opacity-90"
+            />
+          </div>
+
+          <div className="group relative min-h-[200px] overflow-hidden sm:col-span-1 sm:row-span-1 sm:min-h-0">
+            <Image
+              src={COLLAGE_IMAGES.floor.src}
+              alt={COLLAGE_IMAGES.floor.alt}
+              fill
+              sizes="(max-width: 640px) 100vw, 33vw"
+              className="object-cover transition-opacity duration-700 ease-out group-hover:opacity-90"
+            />
+          </div>
         </div>
 
         <div className="mt-16 border-t border-border pt-12 pb-20 md:mt-20 md:pt-16 md:pb-28">
