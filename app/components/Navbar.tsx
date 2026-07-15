@@ -11,7 +11,7 @@ export default function Navbar() {
           <BusinessName />
         </a>
         <p className="hidden text-sm tracking-[0.2em] text-foreground/60 uppercase sm:block">
-          Home is a creative pursuit
+        Lively Luxury
         </p>
       </nav>
     </header>
